@@ -1,6 +1,7 @@
 import discord
 from datetime import datetime
 import random
+import os
 
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
@@ -112,5 +113,5 @@ async def on_message(message):
         embed.add_field(name="규칙 채널", value=Rules_Channel, inline=False)
         await message.channel.send(embed=embed)
 
-
-client.run("NzgwMDc2NTA0MzM1MjUzNTY0.X7p02w.05J20Isls-M_kUBkOi1cczQqrAw")
+BT = os.environ["BT"]
+client.run("BT")
