@@ -113,5 +113,5 @@ async def on_message(message):
         embed.add_field(name="규칙 채널", value=Rules_Channel, inline=False)
         await message.channel.send(embed=embed)
 
-BT = os.environ["BT"]
-client.run("BT")
+BT = os.environ['BT']
+client.run('BT')
